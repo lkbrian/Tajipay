@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+  --font-heading: var(--font-ibm-plex-sans);
+  --font-body: var(--font-source-sans-3);
+}
 
 @layer base {
   :root {
-
     --background: 0 0% 100%;
 
     --foreground: 0 0% 3.9%;
@@ -55,10 +57,9 @@
 
     --chart-5: 27 87% 67%;
 
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
-
     --background: 0 0% 3.9%;
 
     --foreground: 0 0% 98%;
@@ -105,11 +106,9 @@
 
     --chart-4: 280 65% 60%;
 
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {
@@ -118,4 +117,29 @@
   body {
     @apply bg-background text-foreground;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-open-sans), sans-serif;
+  }
+
+  body,
+  p,
+  span {
+    font-family: var(--font-source-sans-3), sans-serif;
+  }
+}
+#primary--stroke {
+  text-shadow: -1px 0 #457d575b, 0 1px #457d575b, 1px 0 #457d575b,
+    0 -1px #457d575b;
+}
+#secondary--stroke {
+  text-shadow: -1px 0 #bbbbbb88, 0 1px #bbbbbb88, 1px 0 #bbbbbb88,
+    0 -1px #bbbbbb88;
+}
+#third--stroke {
+  text-shadow: -1px 0 #457d5731, 0 1px #457d5731, 1px 0 #457d5731,
+    0 -1px #457d5731;
 }

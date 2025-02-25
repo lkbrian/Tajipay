@@ -1,17 +1,40 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/custom/Footer";
 import Navbar from "@/components/custom/Navbar";
+import {
+  IBM_Plex_Sans,
+  Source_Sans_3,
+  Montserrat,
+  Open_Sans,
+} from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-ibm-plex-sans",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sourceSans3 = Source_Sans_3({
   subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-source-sans-3",
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Regular and Bold
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Regular and Bold
+  variable: "--font-open-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ibmPlexSans.variable} ${sourceSans3.variable} ${montserrat.variable} ${openSans.variable} antialiased`}
       >
         <Navbar />
         <main className="min-h-screen">{children}</main>
