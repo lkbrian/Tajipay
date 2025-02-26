@@ -61,7 +61,7 @@ export default function Home() {
             </span>
             <div className="z-20">
               <p className="text-[1.2rem] font-[600] tracking-normal text-[#457d57] w-fit max-md:text-[.8rem] max-md:mx-auto">
-                Organize your funds in one click—all payments in one place.
+                Organize all your payments in one place.
               </p>
               <h1 className="text-[3.5rem] font-bold leading-[4rem] tracking-tight text-[#292929] max-md:text-[1.8rem] max-md:text-center max-md:leading-[2rem]">
                 Unlock the Full Potential of Your Business
