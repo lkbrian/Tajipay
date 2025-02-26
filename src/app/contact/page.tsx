@@ -26,8 +26,9 @@ export default function ContactPage() {
         <Image
           src="/people_img.jpg" // Replace with your image URL
           alt="Company Overview Image"
-          layout="fill" // Makes the image cover the entire div
-          objectFit="cover" // Ensures the image covers the div entirely
+          fill
+          sizes="100%"
+          style={{ objectFit: "cover" }}
           className="absolute top-0 left-0 transition-transform duration-500 ease-in-out hover:scale-110"
         />
         <h2 className="text-4xl font-extrabold text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

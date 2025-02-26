@@ -6,13 +6,14 @@ const AboutPage = () => {
   return (
     <div className="w-full mt-[4rem]">
       {/* Image Section with 35vh height */}
-      <div className="w-full h-[35vh] relative overflow-hidden rounded-lg shadow-lg">
+      <div className="w-full h-[35vh] relative overflow-hidden rounded-b-xl shadow-lg">
         <Image
           src="/people_img.jpg" // Replace with your image URL
           alt="Company Overview Image"
-          layout="fill" // Makes the image cover the entire div
-          objectFit="cover" // Ensures the image covers the div entirely
-          className="absolute top-0 left-0 transition-transform duration-500 ease-in-out hover:scale-110"
+          fill
+          sizes="100%"
+          style={{ objectFit: "cover" }} // Ensures the image covers the div entirely
+          className="absolute top-0 left-0 transition-transform duration-500 ease-in-out hover:scale-110 cover"
         />
         <h2 className="text-4xl font-extrabold text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           About
@@ -31,7 +32,7 @@ const AboutPage = () => {
               </h2>
               <h6
                 id="third--stroke"
-                className="text-[6rem] absolute top-[-51%] left-[25%] text-[#fff] font-montserrat font-extrabold -z-10"
+                className="text-[6rem] absolute top-[-51%] left-[25%] text-[#fff] font-montserrat font-extrabold -z-10 max-md:text-[5rem] max-md:-top-[2.1rem] max-md:left-[12%] max-md:opacity-65"
               >
                 ABOUT
               </h6>
