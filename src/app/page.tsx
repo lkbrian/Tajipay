@@ -51,11 +51,11 @@ export default function Home() {
         </div>
         <span className="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 absolute -top-5 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
         <div className="absolute inset-0  bg-[#f5fff8]/85" />
-        <div className="mx-auto max-w-[100%] text-center z-20 flex max-lg:flex-col align-center px-20 max-md:px-1">
+        <div className="mx-auto max-w-[100%] text-center z-20 flex max-lg:flex-col align-center px-20 max-md:px-1 max-md:mt-20">
           <div className="flex-1 w-[80%] m-auto flex flex-col text-start relative">
             <span
               id="primary--stroke"
-              className="absolute text-[8rem] top-[-5rem] z-0 text-[#f5fff8] font-montserrat font-extrabold max-md:text-[#f5fff9] max-md:text-[4.5rem] max-md:-top-[2.8rem] max-md:left-[8%] max-md:opacity-85"
+              className="absolute text-[8rem] top-[-5rem] z-0 text-[#f5fff8] font-montserrat font-extrabold max-md:text-[#f5fff9] max-md:text-[4.5rem] max-md:-top-[2.5rem] max-md:left-1/2 max-md:transform max-md:-translate-x-1/2 max-md:opacity-85"
             >
               TIJAPAY
             </span>
@@ -125,7 +125,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 text-center relative">
           <span
             id="secondary--stroke"
-            className="absolute text-[8rem] top-[-4rem] left-[25%] z-0 text-[#fff] font-montserrat font-extrabold  max-md:text-[5rem] max-md:-top-[2.1rem] max-md:left-[12%] max-md:opacity-65"
+            className="absolute text-[8rem] top-[-5rem] z-0 text-[#f5fff8] font-montserrat font-extrabold max-md:text-[#f5fff9] max-md:text-[4.5rem] max-md:-top-[2.5rem] max-md:left-1/2 max-md:transform max-md:-translate-x-1/2 max-md:opacity-65"
           >
             CHOOSE
           </span>
