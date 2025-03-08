@@ -122,20 +122,22 @@ export default function Home() {
 
       {/* Features Section */}
       <section className="py-16 bg-gradient-to-r bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center relative">
-          <span
-            id="secondary--stroke"
-            className="absolute text-[8rem] top-[-5rem] z-0 text-[#f5fff8] font-montserrat font-extrabold max-md:text-[#f5fff9] max-md:text-[4.5rem] max-md:-top-[2.5rem] max-md:left-1/2 max-md:transform max-md:-translate-x-1/2 max-md:opacity-65"
-          >
-            CHOOSE
-          </span>
-          <div className="z-20">
-            <h2 className="text-4xl font-bold text-center z-10  opacity-80">
-              Why Choose Tijapay
-            </h2>
-            <p className="text-lg text-center z-10  opacity-80">
-              Optimize your business processes with our easy-to-use solutions.
-            </p>
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <div className="relative">
+            <span
+              id="secondary--stroke"
+              className="absolute opacity-55 text-[8rem] top-1/2 left-1/2 z-0 text-[#fff] font-montserrat font-extrabold transform -translate-x-1/2 -translate-y-1/2 max-md:text-[4.5rem] max-md:opacity-65"
+            >
+              CHOOSE
+            </span>
+            <div className="z-20">
+              <h2 className="text-4xl font-bold text-center z-10  opacity-80">
+                Why Choose Tijapay
+              </h2>
+              <p className="text-lg text-center z-10  opacity-80">
+                Optimize your business processes with our easy-to-use solutions.
+              </p>
+            </div>
           </div>
 
           <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
